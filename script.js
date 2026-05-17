@@ -1,6 +1,24 @@
+/* Existing Menu Toggle */
 function toggleMenu() {
   document.getElementById('navLinks').classList.toggle('open');
 }
+
+/* Lightbox Logic */
+function openLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  lbImg.src = src;
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Prevent scrolling when open
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+/* Existing Filter Logic (if used on other pages) */
 function filterGallery(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -8,11 +26,8 @@ function filterGallery(cat, btn) {
     item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
   });
 }
-function handleSubmit(e) {
-  e.preventDefault();
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
-}
+
+/* Existing Intersection Observer for animations */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -21,7 +36,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.strip-card, .stat, .tg-item, .g-item, .service-row, .price-card, .team-card, .why-card').forEach(el => {
+
+document.querySelectorAll('.photo, .stat, .service-row, .price-card').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
