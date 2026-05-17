@@ -1,145 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muntazir Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muntazir Photography | Nature & City Gallery</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+<style>
+/* Reset and Global Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-    body{
-      background:#0d0d0d;
-      color:white;
-    }
+body{
+    background:#0d0d0d; /* Dark theme background */
+    color:white;
+}
 
-    header{
-      text-align:center;
-      padding:40px 20px;
-      background:black;
-    }
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:black;
+    border-bottom: 2px solid #c0141c; /* Red accent line */
+}
 
-    header h1{
-      font-size:45px;
-      letter-spacing:3px;
-      margin-bottom:10px;
-    }
+header h1{
+    font-size:45px;
+    letter-spacing:3px;
+    color: #c0141c; /* Red theme title */
+    margin-bottom:10px;
+}
 
-    header p{
-      color:#bbb;
-    }
+header p{
+    color:#bbb;
+    letter-spacing:1px;
+}
 
-    .gallery{
-      width:90%;
-      margin:40px auto;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:20px;
-    }
+/* Gallery Grid Layout */
+.gallery{
+    width:90%;
+    max-width: 1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:20px;
+}
 
-    .photo{
-      overflow:hidden;
-      border-radius:15px;
-      position:relative;
-    }
+.gallery .photo-item {
+    overflow:hidden;
+    border-radius:12px;
+    position:relative;
+    border: 1px solid #333;
+}
 
-    .photo img{
-      width:100%;
-      height:350px;
-      object-fit:cover;
-      transition:0.5s;
-      cursor:pointer;
-    }
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    display: block;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
 
-    .photo img:hover{
-      transform:scale(1.08);
-      filter:brightness(80%);
-    }
+.gallery img:hover{
+    transform:scale(1.1);
+    filter:brightness(70%);
+}
 
-    footer{
-      text-align:center;
-      padding:20px;
-      background:black;
-      margin-top:40px;
-      color:#aaa;
-    }
-  </style>
+footer{
+    text-align:center;
+    padding:40px 20px;
+    background:black;
+    margin-top:40px;
+    color:#777;
+    border-top: 1px solid #222;
+}
+
+footer b {
+    color: #c0141c;
+}
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>Muntazir Photography</h1>
-  <p>Capturing Nature, Mountains & Beauty</p>
+    <h1>Muntazir Photography</h1>
+    <p>Capturing the Beauty of Gilgit & Rawalpindi</p>
 </header>
 
 <section class="gallery">
 
-  <div class="photo">
-    <img src="bridge.png" alt="Bridge">
-  </div>
+    <div class="photo-item"><img src="gilgit.png" alt="Gilgit City View"></div>
+    <div class="photo-item"><img src="mountain1.png" alt="Gilgit Mountains"></div>
+    <div class="photo-item"><img src="mountain2.png" alt="Snowy Peaks"></div>
+    <div class="photo-item"><img src="mountain3.png" alt="High Altitude Mountains"></div>
+    <div class="photo-item"><img src="mountain4.png" alt="Majestic Peaks"></div>
 
-  <div class="photo">
-    <img src="flower.png" alt="Flower">
-  </div>
+    <div class="photo-item"><img src="nightcity.png" alt="Night City Lights"></div>
+    <div class="photo-item"><img src="night2.png" alt="Starlit Night View"></div>
 
-  <div class="photo">
-    <img src="gilgit.png" alt="Gilgit">
-  </div>
+    <div class="photo-item"><img src="bridge.png" alt="Gilgit Bridge"></div>
+    <div class="photo-item"><img src="landscape1.png" alt="Natural Landscape"></div>
 
-  <div class="photo">
-    <img src="landscape1.png" alt="Landscape">
-  </div>
+    <div class="photo-item"><img src="flower.png" alt="Wild Flower"></div>
+    <div class="photo-item"><img src="rose1.png" alt="Red Rose Detail"></div>
+    <div class="photo-item"><img src="rose2.png" alt="Pink Rose Detail"></div>
+    <div class="photo-item"><img src="leaf.png" alt="Macro Leaf Pattern"></div>
 
-  <div class="photo">
-    <img src="leaf.png" alt="Leaf">
-  </div>
-
-  <div class="photo">
-    <img src="mountain1.png" alt="Mountain">
-  </div>
-
-  <div class="photo">
-    <img src="mountain2.png" alt="Mountain">
-  </div>
-
-  <div class="photo">
-    <img src="mountain3.png" alt="Mountain">
-  </div>
-
-  <div class="photo">
-    <img src="mountain4.png" alt="Mountain">
-  </div>
-
-  <div class="photo">
-    <img src="night2.png" alt="Night View">
-  </div>
-
-  <div class="photo">
-    <img src="nightcity.png" alt="Night City">
-  </div>
-
-  <div class="photo">
-    <img src="portrait1.png" alt="Portrait">
-  </div>
-
-  <div class="photo">
-    <img src="rose1.png" alt="Rose">
-  </div>
-
-  <div class="photo">
-    <img src="rose2.png" alt="Rose">
-  </div>
+    <div class="photo-item"><img src="pindi-night.png" alt="Rawalpindi Night View"></div>
+    <div class="photo-item"><img src="portrait1.png" alt="Portrait Session"></div>
 
 </section>
 
 <footer>
-  <p>© 2026 Muntazir Photography | All Rights Reserved</p>
+    <p>© 2026 <b>Muntazir Photography</b> | Satellite Town, Rawalpindi</p>
 </footer>
 
 </body>
