@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chimra PixelCraft Studio — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">CHIMRA<span>PixelCraft Studio</span></a>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- SHINY BLACK + RED LOGO -->
+    <div class="hero-logo-badge">
+      <div class="hero-logo-ring">
+        <div class="hero-logo-inner">
+          <div class="hero-logo-line"></div>
+          <span class="hero-logo-text">CHIMRA</span>
+          <span class="hero-logo-sub">PixelCraft Studio</span>
+          <div class="hero-logo-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-sub">Satellite Town, Rawalpindi — Est. 2019</p>
+      <h1 class="hero-title">Capturing<br><em>Pakistan's</em><br>True Beauty</h1>
+      <a href="gallery.html" class="btn-white">View Portfolio</a>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro section">
+    <div class="intro-text">
+      <span class="label">About the Studio</span>
+      <h2>We don't just take photos.<br>We <em>craft stories.</em></h2>
+      <p>Chimra PixelCraft Studio is a premium photography studio based in Rawalpindi. From the mountains of Gilgit to the streets of Rawalpindi — we capture every moment with passion and precision.</p>
+      <a href="about.html" class="btn-outline">Learn About Us</a>
+    </div>
+    <div class="intro-img-grid">
+      <div class="ig-1"><img src="images/silhouette1.png" alt="Portrait Silhouette"></div>
+      <div class="ig-2"><img src="images/mountain1.png" alt="Mountain"></div>
+      <div class="ig-3"><img src="images/rose2.png" alt="Rose Macro"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES STRIP -->
+  <section class="services-strip section">
+    <h2 class="section-title-white">What We <em>Offer</em></h2>
+    <div class="strips-grid">
+      <div class="strip-card">
+        <span class="strip-num">01</span>
+        <h3>Weddings</h3>
+        <p>Pakistani wedding photography — from Mehndi to Baraat — captured with elegance and tradition.</p>
+        <a href="services.html">Explore →</a>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">02</span>
+        <h3>Portraits</h3>
+        <p>Outdoor & studio portrait sessions that bring out your true personality through light and composition.</p>
+        <a href="services.html">Explore →</a>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">03</span>
+        <h3>Landscapes</h3>
+        <p>Northern Pakistan's breathtaking beauty — mountains, rivers, valleys — preserved in every frame.</p>
+        <a href="services.html">Explore →</a>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">04</span>
+        <h3>Macro & Nature</h3>
+        <p>Close-up photography revealing the hidden beauty in flowers, leaves, and everyday nature.</p>
+        <a href="services.html">Explore →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stat"><span>500+</span><p>Sessions Completed</p></div>
+    <div class="stat"><span>350+</span><p>Happy Clients</p></div>
+    <div class="stat"><span>5+</span><p>Years Active</p></div>
+    <div class="stat"><span>17+</span><p>Photo Collections</p></div>
+  </section>
+
+  <!-- GALLERY TEASER -->
+  <section class="gallery-teaser section">
+    <h2 class="section-title">Recent <em>Work</em></h2>
+    <div class="teaser-grid">
+      <div class="tg-item large"><img src="images/nightcity.png" alt="Night City"><div class="tg-label">Night Photography</div></div>
+      <div class="tg-item"><img src="images/mountain2.png" alt="Mountain"><div class="tg-label">Landscapes</div></div>
+      <div class="tg-item"><img src="images/rose1.png" alt="Rose"><div class="tg-label">Macro</div></div>
+      <div class="tg-item"><img src="images/bridge.png" alt="Bridge"><div class="tg-label">Architecture</div></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="gallery.html" class="btn-primary">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial-section section">
+    <div class="testimonial-inner">
+      <blockquote>
+        "Chimra PixelCraft captured our wedding beautifully — every emotion, every tradition, every smile. These photos are our most precious memories."
+      </blockquote>
+      <cite>— Sana & Bilal, Rawalpindi</cite>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>CHIMRA</h2>
+        <p>PixelCraft Studio — Photography that speaks without words. Satellite Town, Rawalpindi.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Satellite Town, Rawalpindi</p>
+        <p>📞 0315-5457945</p>
+        <p>✉️ muntaziraly686@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Chimra PixelCraft Studio. All rights reserved. | Satellite Town, Rawalpindi, Pakistan</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

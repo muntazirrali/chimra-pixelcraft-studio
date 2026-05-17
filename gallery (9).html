@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Chimra PixelCraft Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">CHIMRA<span>PixelCraft Studio</span></a>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Our Gallery</h1>
+    <p>Real photos by Chimra PixelCraft Studio</p>
+  </section>
+
+  <section class="gallery-section section">
+    <div class="filter-tabs">
+      <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+      <button class="filter-btn" onclick="filterGallery('weddings', this)">Weddings</button>
+      <button class="filter-btn" onclick="filterGallery('portraits', this)">Portraits</button>
+      <button class="filter-btn" onclick="filterGallery('landscape', this)">Landscapes</button>
+      <button class="filter-btn" onclick="filterGallery('macro', this)">Macro</button>
+      <button class="filter-btn" onclick="filterGallery('night', this)">Night</button>
+    </div>
+
+    <div class="gallery-masonry" id="galleryGrid">
+
+      <!-- PORTRAITS -->
+      <div class="g-item" data-cat="portraits">
+        <img src="images/portrait1.png" alt="Portrait">
+        <div class="g-overlay"><span>City Portrait</span></div>
+      </div>
+      <div class="g-item" data-cat="portraits">
+        <img src="images/silhouette1.png" alt="Silhouette">
+        <div class="g-overlay"><span>Silhouette by River</span></div>
+      </div>
+      <div class="g-item" data-cat="portraits">
+        <img src="images/silhouette2.png" alt="Silhouette 2">
+        <div class="g-overlay"><span>Sunlit Silhouette</span></div>
+      </div>
+
+      <!-- LANDSCAPES -->
+      <div class="g-item" data-cat="landscape">
+        <img src="images/landscape1.png" alt="Landscape BW">
+        <div class="g-overlay"><span>Mountain Valley — B&W</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/bridge.png" alt="Bridge">
+        <div class="g-overlay"><span>Suspension Bridge</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/mountain1.png" alt="Mountain">
+        <div class="g-overlay"><span>Snow Peak</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/mountain2.png" alt="Bridge Mountain">
+        <div class="g-overlay"><span>Highway to the North</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/mountain3.png" alt="Gilgit Road">
+        <div class="g-overlay"><span>Gilgit Road</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/mountain4.png" alt="Mountain Clouds">
+        <div class="g-overlay"><span>Clouds & Peaks</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/gilgit.png" alt="Gilgit Gate">
+        <div class="g-overlay"><span>Welcome Gilgit</span></div>
+      </div>
+      <div class="g-item" data-cat="landscape">
+        <img src="images/sky1.png" alt="Stormy Sky">
+        <div class="g-overlay"><span>Stormy Rawalpindi Sky</span></div>
+      </div>
+
+      <!-- MACRO -->
+      <div class="g-item" data-cat="macro">
+        <img src="images/rose1.png" alt="Red Rose">
+        <div class="g-overlay"><span>Red Rose Bud</span></div>
+      </div>
+      <div class="g-item" data-cat="macro">
+        <img src="images/rose2.png" alt="Pink Rose">
+        <div class="g-overlay"><span>Dewy Rose</span></div>
+      </div>
+      <div class="g-item" data-cat="macro">
+        <img src="images/flower.png" alt="White Flower">
+        <div class="g-overlay"><span>White Bloom</span></div>
+      </div>
+      <div class="g-item" data-cat="macro">
+        <img src="images/leaf.png" alt="Leaf Macro">
+        <div class="g-overlay"><span>Glowing Leaf</span></div>
+      </div>
+
+      <!-- NIGHT -->
+      <div class="g-item" data-cat="night">
+        <img src="images/nightcity.png" alt="Night City">
+        <div class="g-overlay"><span>City Under the Moon</span></div>
+      </div>
+      <div class="g-item" data-cat="night">
+        <img src="images/night2.png" alt="Night Lights">
+        <div class="g-overlay"><span>Attock Night</span></div>
+      </div>
+
+      <!-- WEDDINGS — Pakistani culture stock images -->
+      <div class="g-item" data-cat="weddings">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80" alt="Pakistani Wedding">
+        <div class="g-overlay"><span>Baraat Night</span></div>
+      </div>
+      <div class="g-item" data-cat="weddings">
+        <img src="https://images.unsplash.com/photo-1617870952348-7524edfb61b7?w=600&q=80" alt="Mehndi">
+        <div class="g-overlay"><span>Mehndi Ceremony</span></div>
+      </div>
+      <div class="g-item" data-cat="weddings">
+        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80" alt="Bride">
+        <div class="g-overlay"><span>Bridal Portrait</span></div>
+      </div>
+      <div class="g-item" data-cat="weddings">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Wedding Couple">
+        <div class="g-overlay"><span>Wedding Moments</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand"><h2>CHIMRA</h2><p>PixelCraft Studio — Photography that speaks without words.</p></div>
+      <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📍 Satellite Town, Rawalpindi</p><p>📞 0315-5457945</p><p>✉️ muntaziraly686@gmail.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Chimra PixelCraft Studio. All rights reserved.</p></div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
